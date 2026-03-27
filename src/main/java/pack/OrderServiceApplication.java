@@ -15,7 +15,7 @@ public class OrderServiceApplication {
 	public String hello() {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-		System.out.println("OrderService03" + now.format(formatter));
+		System.out.println("OrderService03 : " + now.format(formatter));
 		return "OrderService03"+now.format(formatter);
 	}
 	public static void main(String[] args) {
