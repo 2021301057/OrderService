@@ -14,7 +14,7 @@ public class OrderServiceApplication {
 	@GetMapping("/")
 	public String hello() {
 		LocalDateTime now = LocalDateTime.now();
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 		System.out.println("OrderService03" + now.format(formatter));
 		return "OrderService03"+now.format(formatter);
 	}
